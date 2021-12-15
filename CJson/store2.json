@@ -1,0 +1,9 @@
+[{
+		"comment":	"test with bad number should fail",
+		"doc":	["foo", "bar"],
+		"patch":	[{
+				"op":	"test",
+				"path":	"/1e0",
+				"value":	"bar"
+			}]
+	}]

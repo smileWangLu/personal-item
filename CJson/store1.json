@@ -1,0 +1,18 @@
+[{
+		"comment":	"test with bad number should fail",
+		"doc":	["foo", "bar"],
+		"patch":	[{
+				"op":	"test",
+				"path":	"/1e0",
+				"value":	"bar"
+			}],
+		"error":	"test op shouldn't get array element 1"
+	}, {
+		"doc":	["foo", "sil"],
+		"patch":	[{
+				"op":	"add",
+				"path":	"/bar",
+				"value":	42
+			}],
+		"error":	"Object operation on array target"
+	}]
